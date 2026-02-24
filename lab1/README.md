@@ -135,6 +135,7 @@
  Вывести стоимость каждого вида товара на складе
 
 ## Результат:
+
 <img width="695" height="113" alt="image" src="https://github.com/user-attachments/assets/d4117ba4-85e1-403f-b9c8-bc3ca4e28b1c" />
 
 
