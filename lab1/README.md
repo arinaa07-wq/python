@@ -124,7 +124,8 @@
 Указать надо только по 2 магазина с минимальными ценамими
 
 ## Результат:
-<img width="1413" height="69" alt="image" src="https://github.com/user-attachments/assets/90ed42f4-305f-46cf-b99e-e5544eec02c9" />
+<img width="1551" height="138" alt="image" src="https://github.com/user-attachments/assets/e6b6685b-6e95-4777-94e4-57a8e9f5f669" />
+
 
 
 # Задание 10_store.py
@@ -148,5 +149,5 @@
 ### git pull - забрать изменения с облака
 
 ## Использованные русурсы 
-1. [Matplotlib cheatsheets and handouts](https://docs.python.org/3/search.html?)
+1. [FAQ по курсу “Пайтон с нуля”](https://docs.python.org/3/search.html?)
 
