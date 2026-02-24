@@ -23,7 +23,8 @@
 >
 >Формула расстояния от этой точки до начала координат  ((point_1)[0]**2+point_1[1]**2)**0.5
 ## Результат:
-<img width="803" height="124" alt="image" src="https://github.com/user-attachments/assets/2586b179-35d7-44d4-9277-a7c3a158990f" />
+<img width="683" height="66" alt="image" src="https://github.com/user-attachments/assets/a85ab48d-b78a-45cf-8f2a-113223de917d" />
+
 
 # Задание 02_operatios.py
 ### Задание: 
