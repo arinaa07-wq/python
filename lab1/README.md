@@ -113,6 +113,7 @@
 
 ## Результат:
 <img width="930" height="146" alt="image" src="https://github.com/user-attachments/assets/14798383-8856-4518-b2b2-11a0d36d802b" />
+
 # Задание 09_shopping.py
 ### Задание:
 Есть словарь магазинов с распродажами
@@ -122,6 +123,8 @@
 Указать надо только по 2 магазина с минимальными ценамими
 
 ## Результат:
+<img width="1413" height="69" alt="image" src="https://github.com/user-attachments/assets/90ed42f4-305f-46cf-b99e-e5544eec02c9" />
+
 
 # Задание 10_store.py
 ### Задание:
@@ -132,6 +135,8 @@
  Вывести стоимость каждого вида товара на складе
 
 ## Результат:
+<img width="695" height="113" alt="image" src="https://github.com/user-attachments/assets/d4117ba4-85e1-403f-b9c8-bc3ca4e28b1c" />
+
 
 # Шпоргалка 
 ### git add - подготовка к сохранению 
