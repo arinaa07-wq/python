@@ -148,5 +148,5 @@
 ### git pull - забрать изменения с облака
 
 ## Использованные русурсы 
-1. [Matplotlib cheatsheets and handouts](https://docs.python.org/3/search.html?)
+1. [FAQ по курсу “Пайтон с нуля”](https://docs.python.org/3/search.html?)
 
