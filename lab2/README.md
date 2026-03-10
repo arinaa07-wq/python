@@ -1,44 +1,16 @@
 ### Задание 
 Настя составляет 6-буквенные коды из букв Н, А, С, Т, Я. Каждая допустимая гласная буква может входить в код не более одного раза. Сколько кодов может составить Настя?
 ## Код
-     def count_combinations():
-    """
-    Подсчитывает количество 6-буквенных комбинаций из букв слова "настя",
-    где 'а' встречается не более 1 раза и 'я' встречается не более 1 раза.
-
-    result = count_combinations()
-    print(result)
-    20480
-
-    Пояснение расчета:
-    Всего комбинаций без ограничений: 6^6 = 46656
-    Комбинаций где 'а' > 1 раза и/или 'я' > 1 раза вычитаются, остается 20480.
-    """
-    k = 0
-    a = 'настя'
-    for b1 in a:
-        for b2 in a:
-            for b3 in a:
-                for b4 in a:
-                    for b5 in a:
-                        for b6 in a:
-                            s = b1 + b2 + b3 + b4 + b5 + b6
-                            if s.count('а') <= 1:
-                                if s.count('я') <= 1:
-                                    k = k + 1
-    return k  #  возвращаем результат
-
-
-    if __name__ == "__main__":
-    # Этот код выполнится только при прямом запуске файла
-    result = count_combinations()
-    print(result)
-
-    if __name__ == "__main__":
-    # Этот код выполнится только при прямом запуске файла
-    result = count_combinations()
-    print(result)
-
+    from itertools import*
+     def f():
+    k=0
+    alf='НАСТЯ'
+    for x in product(alf, repeat=6):
+        s="".join(x)
+        if s.count('А')<=1 and s.count('Я')<=1:
+            k=k+1
+     return(k)        
+     print(f())
 ## Результат 
 
 <img width="811" height="56" alt="image" src="https://github.com/user-attachments/assets/aa3973dc-a377-4abb-a8c4-1f957afd6372" />
