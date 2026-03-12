@@ -182,3 +182,4 @@ if isinstance(item, list):
 if isinstance(item, list):
     total += count_recursive(item)  #  Вот рекурсия
 ~~~
+### reversed() разворачивает последовательность задом наперед
