@@ -1,11 +1,11 @@
 def f(lst):
     rez=""
     stac=[lst]
-    while stac:
-        current = stac.pop(0)
-        for item in (current):
-             if isinstance(item, list):stac.append(item)
-             else:rez=rez+str(item)
+    while stac: #пока стек не пуст 
+        current = stac.pop(0)#берем первый элемент из стека 
+        for item in (current):#перебираем все элементы 
+             if isinstance(item, list):stac.append(item)#если элемент список то добавляем его в стек 
+             else:rez=rez+str(item)#сли число добавляем его к результату 
     return rez
 l0=[]
 l1=[1,2,3,4,5]
