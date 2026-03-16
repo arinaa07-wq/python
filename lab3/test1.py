@@ -1,5 +1,5 @@
 import pytest
-from lab1 import f #из файла lab1 импортируем функцию f
+from lab3_12 import f #из файла lab1 импортируем функцию f
 def test_f():
     """Один тест на все"""
     assert f([])==""
