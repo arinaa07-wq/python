@@ -201,18 +201,24 @@ isclose - функция из модуля math для сравнения чис
 # Ход работы 
 ## Lab1 с рекурсией
 ### результат:
+<img width="979" height="97" alt="image" src="https://github.com/user-attachments/assets/cc85c072-6005-4fc6-b060-1158c4891d35" />
 
 ## Lab1 без рекурсии
 ### результат:
+<img width="945" height="91" alt="image" src="https://github.com/user-attachments/assets/bdf7cd1b-a7b5-4847-bcec-68e12a0912c4" />
 
 ## Lab2 с рекурсией
 ### результат:
+<img width="982" height="179" alt="image" src="https://github.com/user-attachments/assets/6ebb13ae-1da9-4d65-a8d6-13ddfefbcf94" />
 
 ## Lab2 без рекурсии
 ### результат:
+<img width="940" height="186" alt="image" src="https://github.com/user-attachments/assets/e4367d16-de1f-4597-b506-d86f380db591" />
 
 ## Тесты для функций:
 
+<img width="1073" height="206" alt="image" src="https://github.com/user-attachments/assets/4176b15a-8575-4938-80b0-e637ff58432d" />
+<img width="1447" height="233" alt="image" src="https://github.com/user-attachments/assets/4fddf436-5dd1-4629-89f4-370d2a2c1b05" />
 
 ## Использованные русурсы 
 1. [FAQ по курсу “Пайтон с нуля”](https://docs.python.org/3/search.html?)
