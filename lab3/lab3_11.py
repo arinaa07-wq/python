@@ -7,9 +7,15 @@ def f(lst: list) -> str:
         if isinstance(item,list):result += f(item)# если элемент список то рекурсивно вызываем f для него
         else: result += str(item) #если результат число то преобразуем в строку и добавляем
     return result
+
 l0=[]
 l1=[1,2,3,4,5]
 l2=[1,[2,[],[]],[3,[]],4,[[[[5]]]]]
-print(f(l0))
-print(f(l1))
-print(f(l2))
+
+# Добавляем стрелки при печати
+for lst in [l0, l1, l2]:
+    res = f(lst)
+    if res:
+        print('->'.join(res) + '->None')
+    else:
+        print('None')
