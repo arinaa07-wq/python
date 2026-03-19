@@ -1,59 +1,23 @@
-from functools import wraps, lru_cache
-
-def mod(mode='global'):
-    """
-    Декоратор с опциональным параметром mode.
-    mode='global' - уникальность между ВСЕМИ вызовами
-    mode='local' - уникальность только ВНУТРИ одного вызова
-    Поддерживает рекурсивные функции через lru_cache
-    """
-    def un_z(func):  # Для глобального режима - один set на все вызовы
-        if mode == 'global':
-            seen = set()
-            
-            @wraps(func) # сохраняет имя и документацию оригинальной функции
-            @lru_cache(None)  # поддержка рекурсии
-            def wrapper(*args, **kwargs): # <- принимает ЛЮБЫЕ аргументы
-                
-                
-                # Получаем результат от функции
-                result = func(*args, **kwargs)
-                
-                # Обрабатываем результат (если это список/кортеж)
-                if isinstance(result, (list, tuple)):
-                    new_items = []
-                    for item in result:
-                        if item not in seen:
-                            seen.add(item)
-                            new_items.append(item)
-                    return new_items
-                else:
-                    # Для одиночных значений
-                    if result not in seen:
-                        seen.add(result)
-                        return result
-                    return None
-            return wrapper
-        
-        # Для локального режима - новый set на каждый вызов
-        elif mode == 'local':
-            @wraps(func)  # сохраняет имя и документацию оригинальной функции
-            @lru_cache(None)  # поддержка рекурсии
-            def wrapper(*args, **kwargs):
-                seen = set()  # новый set для каждого вызова
-                result = func(*args, **kwargs)
-                
-                if isinstance(result, (list, tuple)):
-                    new_items = []
-                    for item in result:
-                        if item not in seen:
-                            seen.add(item)
-                            new_items.append(item)
-                    return new_items
-                return result
-            return wrapper
+def limit_calls(max_calls): #Объявляем функцию с названием limit_calls, которая принимает один параметр max_calls (максимальное количество вызовов)
+    """Декоратор ограничивающий количество вызовов функции"""
+    def decorator(func): #объявляем функцию decorator oна принимает параметр func- функция, которую мы декорируем
+        calls=0 # сколько раз вызвали функцию
+        def wrapper(*args, **kwargs): # oбъявляем wrapper, принимает  позиционные аргументы *args, именованные аргументы **kwargs.функция будет вызываться ВМЕСТО оригинальной функции.
+            nonlocal calls # Разрешаем изменять переменнцю из внешней функции
+            if calls >= max_calls: 
+                print(f"Функция {func.__name__} достигла лимита вызовов ({max_calls})")
+                return None #Оригинальная функция НЕ вызывается.
+            calls+=1 #yвеличиваем счетчик вызовов на 1 если лимит еще не достигнут
+            print(f"Вызов {calls} из {max_calls}")
+            return func (*args, **kwargs)
+        return wrapper
+    return decorator 
+#@limit_calls(3)
+def say_hello(name):
     
-    # Поддержка вызова без параметра
-    if callable(mode):
-        return un_z(mode)
-    return un_z
+    print (f" Привет, {name}!")
+say_hello = limit_calls(3)(say_hello)
+say_hello("Aнна")
+say_hello("Aнна")
+say_hello("Aнна")
+say_hello("Aддд")
