@@ -18,4 +18,4 @@
 <img width="909" height="721" alt="image" src="https://github.com/user-attachments/assets/6da70bba-3697-4557-8fce-4b4016aa0a28" />
 
 ## Список использованных источников:
-1. [Функции в Python-это первоклассные объекты]([https://matplotlib.org/cheatsheets/](https://dbader.org/blog/python-first-class-functions))
+1. [Функции в Python-это первоклассные объекты](https://matplotlib.org/cheatsheets/(https://dbader.org/blog/python-first-class-functions))
