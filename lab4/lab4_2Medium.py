@@ -44,9 +44,9 @@ def unlimited_greet(name):
 unlimited_greet("Анна")
 unlimited_greet("Анна")
 unlimited_greet("Анна")
-unlimited_greet("Анна")  # 4-й вызов - работает!
+unlimited_greet("Анна")  # 4-й вызов - работает
 
-# ТЕСТ 3: Рекурсивная функция (НОВАЯ ФИЧА)
+# ТЕСТ 3: Рекурсивная функция 
 print("\n=== Тест 3: Рекурсивная функция ===")
 @limit_calls(2)
 def factorial(n):
