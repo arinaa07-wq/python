@@ -2,13 +2,13 @@ def dec(func):
     def wrapper(*args, **kwargs):
         print("Вызов замыкания ")
         result = func(*args, **kwargs)
-        print(f"Результат: {result}")
+        print(f"Результат:")
         return result
     return wrapper
+@dec
 def un_z(): #Функция для поиска уникальных значений 
     """Замыкание, которое собирает только уникальные значения"""
     seen=set() #Хранит уникальные значения 
-    @dec
     def per_z(*args): #Функция перебора значений
         """Принимает любые аргументы и возвращает только новые уникальные"""
         new_items = []
