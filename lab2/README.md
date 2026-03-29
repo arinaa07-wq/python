@@ -1,4 +1,4 @@
-### Задание 
+### Задание 1
 Настя составляет 6-буквенные коды из букв Н, А, С, Т, Я. Каждая допустимая гласная буква может входить в код не более одного раза. Сколько кодов может составить Настя?
 ## Код
     from itertools import*
@@ -15,8 +15,14 @@
 
 <img width="811" height="56" alt="image" src="https://github.com/user-attachments/assets/aa3973dc-a377-4abb-a8c4-1f957afd6372" />
 
+### Доктесты к функции 
+<img width="575" height="346" alt="image" src="https://github.com/user-attachments/assets/b098cca2-d9d6-4454-b8c6-b35a928bc9be" />
+<img width="607" height="165" alt="image" src="https://github.com/user-attachments/assets/027df228-2c27-46b0-862f-8ee524ef1861" />
 
-### Задание 
+
+
+
+### Задание 2
 Значение арифметического выражения 1618 ⋅ 410−46−16 16^{18} · 4^{10} − 46 − 16 1618 ⋅ 410−46−16  записали в системе счисления с основанием 4. Сколько цифр 3 содержится в этой записи?
 ## Код
     def f():
@@ -44,6 +50,11 @@
     # Для запуска при прямом выполнении скрипта
     if __name__ == "__main__":
     print(f())
+    
+### Доктесты к функции 
+<img width="861" height="237" alt="image" src="https://github.com/user-attachments/assets/e982841c-d5fc-4685-8316-551b464a0460" />
+<img width="571" height="322" alt="image" src="https://github.com/user-attachments/assets/90c3583a-6daa-4b39-bfe1-a927816b6b01" />
+
 
 ## Результат 
 <img width="813" height="54" alt="image" src="https://github.com/user-attachments/assets/c5ca3bfe-f412-424c-9654-788f202bcd46" />
@@ -71,6 +82,11 @@
 
 ## Результат 
 <img width="826" height="148" alt="image" src="https://github.com/user-attachments/assets/70581df9-64d2-4477-b5e6-659bb657e0b2" />
+
+### Доктесты к функции 
+<img width="774" height="186" alt="image" src="https://github.com/user-attachments/assets/45a2a5a5-5ac4-406e-9cba-b542af76649f" />
+<img width="509" height="487" alt="image" src="https://github.com/user-attachments/assets/1d0eb7dc-3e0c-48fb-bee6-9a319bf327a2" />
+
 
 ## Использованные русурсы 
 1. [FAQ по курсу “Пайтон с нуля”](https://docs.python.org/3/search.html?)
